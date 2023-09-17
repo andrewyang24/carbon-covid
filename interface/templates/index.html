@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon and COVID-19 Data</title>
+</head>
+<body>
+    <h1>Carbon and COVID-19 Data</h1>
+    <div class="container">
+        <form id="data-form" class="form-container">
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region" required><br><br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <button type="submit">Get Data</button>
+        </form>
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='img/regions.png') }}" alt="Regions Image">
+        </div>
+    </div>
+    <div id="result"></div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</body>
+</html>

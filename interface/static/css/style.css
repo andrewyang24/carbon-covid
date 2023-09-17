@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Center items vertically */
+}
+.form-container {
+    flex: 1; /* Allow the form container to grow and fill available space */
+    padding: 20px; /* Adjust the padding as needed */
+}
+.image-container {
+    flex: 1; /* Allow the image container to grow and fill available space */
+    margin: 20px; /* Adjust the margin as needed */
+    text-align: center;
+    max-height: 100px;
+}
+.data-container {
+    display: flex;
+    justify-content: space-between; /* Arrange data side by side */
+    align-items: flex-start;
+}
+img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: auto;
+}
